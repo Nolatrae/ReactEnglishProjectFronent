@@ -1,0 +1,127 @@
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header{
+  background-color: #DEEDFF;
+}
+
+.nav{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  height: 80px;
+
+
+  .menu{
+    display: flex;
+    gap: 30px;
+  }
+
+  .menuLogo {
+    justify-self: center;
+    display: flex;
+  }
+
+  .login {
+    position: relative;
+    justify-self: end;
+  }
+
+  .menu__link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .login{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .menu__logo{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+
+    color: #3F2AFF;
+  }
+
+  .menu__btn{
+    width: 30px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    span{
+      height: 3px;
+      background-color: #070707;
+      width: 100%;
+    }
+  }
+  
+}
+
+@media (max-width:820px) {
+  .nav{
+    .menu__btn{
+      display: flex;
+    }
+  
+    .menu{
+      transform: translateX(-100%);
+      transition: transform 1s;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 50px 30px;
+      align-items: center;
+    }
+
+    .menu__link{
+      display: inline-block;
+      font-size: 24px;
+      padding: 10px 0px;
+    }
+
+    .menu--active{
+      transform: translateX(0%);
+    }
+  }
+}
+
+// .menu{
+//   transform: translateX(-100%);
+//   transition: transform 1s;
+//   position: absolute;
+//   top: 80px;
+//   left: 0;
+//   right: 0;
+//   width: 320px;
+//   background-color: #070707;
+//   color: white;
+//   padding: 100px 20px;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .menu.menu--active{
+//   transform: translateX(0%);
+// }
+
+

@@ -1,0 +1,194 @@
+[
+  {
+    "title": "country",
+    "description": "all info about the country",
+    "image": "https://kartinkin.net/uploads/posts/2022-08/1660858587_27-kartinkin-net-p-dom-v-derevne-fentezi-oboi-krasivo-31.jpg",
+    "words": ["car", "bike", "bicycle"],
+    "translate": ["Автомобиль", "Мотоцикл", "Велосипед"],
+    "questions": [
+      {
+        "quest": "Автомобиль это ... ?",
+        "variants": ["car", "bike", "bicycle"],
+        "correct": 0
+      },
+      {
+        "quest": "Мотоцикл это ... ?",
+        "variants": ["car", "bike", "bicycle"],
+        "correct": 1
+      },
+      {
+        "quest": "Велосипед это ... ?",
+        "variants": ["car", "bike", "bicycle"],
+        "correct": 2
+      }
+    ]
+  },
+  {
+    "title": "country",
+    "description": "all info about the country",
+    "image": "https://kartinkin.net/uploads/posts/2022-08/1660858587_27-kartinkin-net-p-dom-v-derevne-fentezi-oboi-krasivo-31.jpg",
+    "words": ["cat", "dog", "cow", "pig"],
+    "translate": ["Кошка", "Собака", "Корова", "Свинья"],
+    "questions": [
+      {
+        "quest": "Корова это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 0
+      },
+      {
+        "quest": "Кошка это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 2
+      },
+      {
+        "quest": "Собака это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "country",
+    "description": "all info about the country",
+    "image": "https://kartinkin.net/uploads/posts/2022-08/1660858587_27-kartinkin-net-p-dom-v-derevne-fentezi-oboi-krasivo-31.jpg",
+    "words": ["cat", "dog", "cow", "pig"],
+    "translate": ["Кошка", "Собака", "Корова", "Свинья"],
+    "questions": [
+      {
+        "quest": "Корова это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 0
+      },
+      {
+        "quest": "Кошка это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 2
+      },
+      {
+        "quest": "Собака это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "country",
+    "description": "all info about the country",
+    "image": "https://kartinkin.net/uploads/posts/2022-08/1660858587_27-kartinkin-net-p-dom-v-derevne-fentezi-oboi-krasivo-31.jpg",
+    "words": ["cat", "dog", "cow", "pig"],
+    "translate": ["Кошка", "Собака", "Корова", "Свинья"],
+    "questions": [
+      {
+        "quest": "Корова это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 0
+      },
+      {
+        "quest": "Кошка это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 2
+      },
+      {
+        "quest": "Собака это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "country",
+    "description": "all info about the country",
+    "image": "https://kartinkin.net/uploads/posts/2022-08/1660858587_27-kartinkin-net-p-dom-v-derevne-fentezi-oboi-krasivo-31.jpg",
+    "words": ["cat", "dog", "cow", "pig"],
+    "translate": ["Кошка", "Собака", "Корова", "Свинья"],
+    "questions": [
+      {
+        "quest": "Корова это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 0
+      },
+      {
+        "quest": "Кошка это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 2
+      },
+      {
+        "quest": "Собака это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "country",
+    "description": "all info about the country",
+    "image": "https://kartinkin.net/uploads/posts/2022-08/1660858587_27-kartinkin-net-p-dom-v-derevne-fentezi-oboi-krasivo-31.jpg",
+    "words": ["cat", "dog", "cow", "pig"],
+    "translate": ["Кошка", "Собака", "Корова", "Свинья"],
+    "questions": [
+      {
+        "quest": "Корова это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 0
+      },
+      {
+        "quest": "Кошка это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 2
+      },
+      {
+        "quest": "Собака это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "country",
+    "description": "all info about the country",
+    "image": "https://kartinkin.net/uploads/posts/2022-08/1660858587_27-kartinkin-net-p-dom-v-derevne-fentezi-oboi-krasivo-31.jpg",
+    "words": ["cat", "dog", "cow", "pig"],
+    "translate": ["Кошка", "Собака", "Корова", "Свинья"],
+    "questions": [
+      {
+        "quest": "Корова это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 0
+      },
+      {
+        "quest": "Кошка это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 2
+      },
+      {
+        "quest": "Собака это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 1
+      }
+    ]
+  },
+  {
+    "title": "country",
+    "description": "all info about the country",
+    "image": "https://kartinkin.net/uploads/posts/2022-08/1660858587_27-kartinkin-net-p-dom-v-derevne-fentezi-oboi-krasivo-31.jpg",
+    "words": ["cat", "dog", "cow", "pig"],
+    "translate": ["Кошка", "Собака", "Корова", "Свинья"],
+    "questions": [
+      {
+        "quest": "Корова это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 0
+      },
+      {
+        "quest": "Кошка это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 2
+      },
+      {
+        "quest": "Собака это ... ?",
+        "variants": ["cow", "dog", "cat"],
+        "correct": 1
+      }
+    ]
+  }
+]

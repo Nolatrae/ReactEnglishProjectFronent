@@ -1,7 +1,7 @@
 import Container from "@mui/material/Container";
 import { Routes, Route } from 'react-router-dom'
 import { Header } from "./components";
-import { Home, FullPost, Registration, AddPost, Login, Counter, Quiz, Photos, ListUsers, Converter } from "./pages";
+import { Home, FullPost, Registration, AddPost, Login, Counter, Quiz, Photos, ListUsers, Converter, CardLexicon, Slider } from "./pages";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAuthMe, selectIsAuth } from "./redux/slices/auth";
 
@@ -14,12 +14,16 @@ function App() {
   React.useEffect(() => {
     dispatch(fetchAuthMe())
   }, [])
+
+  // const [searchValue, setSearchValue] = React.useState('')
  
 
   return (
     <>
       <Header />
-      <Container maxWidth="lg">
+      {/* <Container
+      //  maxWidth="lg"
+      > */}
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/posts/:id' element={<FullPost />}></Route>
@@ -33,11 +37,14 @@ function App() {
           <Route path='/photos' element={<Photos />}></Route>
           <Route path='/listusers' element={<ListUsers />}></Route>
           <Route path='/converter' element={<Converter />}></Route>
+          <Route path='/slider' element={<Slider />}></Route>
+          
+          <Route path='/cardLexicon' element={<CardLexicon />}></Route>
 
 
 
         </Routes>
-      </Container>
+      {/* </Container> */}
     </>
   );
 }
