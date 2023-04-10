@@ -10,3 +10,4 @@ export { ListUsers } from "./smallProjects/ListUsers/ListUsers";
 export { Converter} from "./smallProjects/Converter/Converter";
 export { CardLexicon } from "./CardLexicon/CardLexicon.jsx";
 export { Slider } from "./smallProjects/slider/Slider"
+export { CardFull } from "./CardFull/CardFull.jsx";

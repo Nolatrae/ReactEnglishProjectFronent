@@ -1,7 +1,6 @@
-import Container from "@mui/material/Container";
 import { Routes, Route } from 'react-router-dom'
 import { Header } from "./components";
-import { Home, FullPost, Registration, AddPost, Login, Counter, Quiz, Photos, ListUsers, Converter, CardLexicon, Slider } from "./pages";
+import { Home, FullPost, Registration, AddPost, Login, Counter, Quiz, Photos, ListUsers, Converter, CardLexicon, Slider, CardFull } from "./pages";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAuthMe, selectIsAuth } from "./redux/slices/auth";
 
@@ -40,6 +39,7 @@ function App() {
           <Route path='/slider' element={<Slider />}></Route>
           
           <Route path='/cardLexicon' element={<CardLexicon />}></Route>
+          <Route path={'/cards/:id'} element={<CardFull />}></Route>
 
 
 

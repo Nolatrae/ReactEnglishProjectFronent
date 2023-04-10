@@ -1,21 +1,28 @@
 import React from 'react';
+import { useNavigate, Link } from "react-router-dom";
 import './reset.scss';
 import './styles.scss';
 import promoCards from '../../static/img/cards.png';
 // import itemsCard from '../../static/cardLexicon.json';
 import { useSelector, useDispatch } from 'react-redux';
 import { UniqueCard } from '../../components/CardLexicon/UniqueCard';
+import { UniqueCardLoader } from '../../components/CardLexicon/UniqueCardLoader';
 
 import Search from '../../components/search/Search';
+import { Skeleton } from '@mui/material';
 
-export const CardLexicon = ({}) => {
+export const CardLexicon = ({ }) => {
+  const navigate = useNavigate()
   const searchValue = useSelector((state) => state.search.value);
   const search = searchValue ? `search=${searchValue}` : '';
 
+  // console.log(UniqueCardLoader)
+
   const [collections, setCollections] = React.useState([]);
+  const [isLoading, setIsLoading] = React.useState(true)
 
   React.useEffect(() => {
-    // setIsLoading(true)
+    setIsLoading(true)
     fetch(`https://63f1e63eaab7d09125fd96ac.mockapi.io/photos?
 
     `)
@@ -27,11 +34,27 @@ export const CardLexicon = ({}) => {
       .catch((err) => {
         console.warn(err);
         alert('Ошибка при получении карт');
-      });
-    // .finally(() => setIsLoading(false))
+      })
+    .finally(() => setIsLoading(false))
   }, [searchValue]);
 
   // console.log(collections)
+
+  const skeletons = [...new Array(10)].map((_,index) => <UniqueCardLoader key={index}/>)
+  const cards = collections
+  .filter((obj) => {
+    if (obj.title.includes(searchValue)) {
+      return true;
+    }
+    return false;
+  })
+  .map((obj, index) => (
+    <Link key={index} to={`/cards/${index}`}>
+      <UniqueCard
+        {...obj}
+      />
+    </Link>
+  ))
 
   return (
     <section className='cardslexicon'>
@@ -53,24 +76,7 @@ export const CardLexicon = ({}) => {
         <div className="container">
           <Search></Search>
           <div className="container-card">
-            {collections
-              .filter((obj) => {
-                if (obj.title.includes(searchValue)) {
-                  return true;
-                }
-                return false;
-              })
-              .map((obj, index) => (
-                <UniqueCard
-                  key={index}
-                  title={obj.title}
-                  description={obj.description}
-                  image={obj.image}
-                  words={obj.words}
-                  translate={obj.translate}
-                  questions={obj.questions}
-                />
-              ))}
+            {isLoading ? skeletons : cards}
           </div>
         </div>
       </section>
